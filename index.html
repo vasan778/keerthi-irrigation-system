@@ -4,240 +4,187 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keerthi Irrigation | Professional Irrigation Solutions</title>
+<title>Keerthi Irrigation | Complete Irrigation Solutions</title>
 
-<meta name="description" content="Keerthi Irrigation - Trusted irrigation solutions with 30+ years experience in drip irrigation, sprinklers, pipes and farm solutions in Tamil Nadu.">
-<meta name="keywords" content="Keerthi Irrigation, drip irrigation, sprinkler system, agriculture irrigation, Tamil Nadu irrigation">
+<meta name="description" content="Keerthi Irrigation offers drip irrigation, sprinkler systems, farm irrigation solutions with subsidy support. 30+ years trusted service.">
+<meta name="keywords" content="Drip Irrigation, Keerthi Irrigation, Sprinkler System, PMKSY, Agriculture Irrigation">
 <meta name="author" content="Keerthi Irrigation">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif;}
+body{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://t3.ftcdn.net/jpg/16/31/78/40/360_F_1631784055_rjyYM1EV9UmcEedsI8HAv9jfOUllYN6Z.jpg') center/cover fixed;
+color:#fff;
+}
+header{text-align:center;padding:25px;background:rgba(0,0,0,.6);}
+header h1{font-size:2.5rem;}
+header p{color:#9cffc7;}
+
+nav{display:flex;justify-content:center;gap:25px;padding:15px;background:rgba(0,0,0,.5);flex-wrap:wrap;}
+nav a{color:#fff;text-decoration:none;font-weight:600;position:relative;}
+nav a::after{content:"";height:2px;width:0;background:#00ffcc;position:absolute;left:0;bottom:-5px;transition:.3s;}
+nav a:hover::after{width:100%;}
+
+.section{display:none;padding:70px 10%;animation:fade .6s;}
+.active{display:block;background:rgba(0,0,0,.4);border-radius:15px;}
+
+.hero{text-align:center;padding:80px 10%;}
+.hero h2{font-size:3rem;color:#00ffcc;}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;margin-top:40px;}
+.card{
+background:rgba(255,255,255,.1);
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+transition:.3s;
+cursor:pointer;
+}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 15px 40px rgba(0,255,204,.4);}
+
+footer{text-align:center;padding:20px;background:rgba(0,0,0,.7);margin-top:40px;}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+color:#fff;
+text-decoration:none;
+box-shadow:0 0 15px #25d366;
 }
 
-body {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://t3.ftcdn.net/jpg/16/31/78/40/360_F_1631784055_rjyYM1EV9UmcEedsI8HAv9jfOUllYN6Z.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+.lang-btn{
+position:fixed;
+top:20px;
+right:20px;
+background:#00ffcc;
+color:#000;
+padding:8px 12px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 25px;
-  background: rgba(0,0,0,0.6);
+@keyframes fade{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
 }
 
-header h1 {
-  font-size: 2.5rem;
-}
-
-header p {
-  color: #9cffc7;
-}
-
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-  background: rgba(0,0,0,0.5);
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  position: relative;
-}
-
-nav a::after {
-  content: "";
-  height: 2px;
-  width: 0;
-  background: #00ffcc;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* SECTIONS */
-.section {
-  display: none;
-  padding: 70px 10%;
-  backdrop-filter: blur(3px);
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-.active {
-  display: block;
-  background: rgba(0,0,0,0.4);
-  border-radius: 15px;
-  padding: 50px 10%;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 10%;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  color: #00ffcc;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.card {
-  background: rgba(255,255,255,0.1);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 40px rgba(0,255,204,0.4);
-}
-
-/* FOOTER */
-footer {
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25d366;
-  padding: 16px;
-  border-radius: 50%;
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 0 15px #25d366;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-  .hero h2 {
-    font-size: 2rem;
-  }
-}
-
-/* ANIMATION */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@media(max-width:600px){
+header h1{font-size:1.8rem;}
+.hero h2{font-size:2rem;}
 }
 </style>
 </head>
 
 <body>
 
+<div class="lang-btn" onclick="toggleLang()">தமிழ்</div>
+
 <header>
-  <h1>Keerthi Irrigation</h1>
-  <p>Complete Irrigation Solutions | Since 30+ Years</p>
+<h1>Keerthi Irrigation</h1>
+<p>Complete Irrigation Solutions | 30+ Years Experience</p>
 </header>
 
 <nav>
-  <a href="#" onclick="show('home')">Home</a>
-  <a href="#" onclick="show('about')">About</a>
-  <a href="#" onclick="show('products')">Products</a>
-  <a href="#" onclick="show('contact')">Contact</a>
+<a href="#" onclick="show('home')">Home</a>
+<a href="#" onclick="show('about')">About</a>
+<a href="#" onclick="show('products')">Products</a>
+<a href="#" onclick="show('drip')">Drip System</a>
+<a href="#" onclick="show('contact')">Contact</a>
 </nav>
 
 <!-- HOME -->
 <section id="home" class="section active">
-  <div class="hero">
-    <h2>Smart Irrigation for Smart Farming</h2>
-    <p>Serving farmers with trusted irrigation solutions for over 30 years</p>
-  </div>
-
-  <div class="cards">
-    <div class="card">Drip Irrigation Systems</div>
-    <div class="card">Sprinkler Systems</div>
-    <div class="card">Pipes & Accessories</div>
-  </div>
+<div class="hero">
+<h2>Smart Irrigation for Smart Farming</h2>
+<p>Trusted irrigation solutions for modern agriculture</p>
+</div>
+<div class="cards">
+<div class="card" onclick="show('drip')">Drip Irrigation System</div>
+<div class="card">Sprinkler System</div>
+<div class="card">PVC & HDPE Pipes</div>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <h2>About Keerthi Irrigation</h2>
-  <p style="margin-top:20px; line-height:1.8;">
-    Keerthi Irrigation is a trusted name with over 30 years of experience in modern irrigation solutions...
-  </p>
-  <p style="margin-top:15px; line-height:1.8;">
-    We specialize in drip irrigation, sprinkler systems, pipes, filters and complete farm solutions.
-  </p>
-  <p style="margin-top:15px; line-height:1.8;">
-    Our mission is to save water, improve crop yield and support farmers with reliable technology.
-  </p>
+<h2>About Keerthi Irrigation</h2>
+<p style="margin-top:20px;line-height:1.8;">
+Keerthi Irrigation has over 30 years of experience providing reliable irrigation solutions across Tamil Nadu.
+We help farmers save water, increase yield and reduce costs.
+</p>
 </section>
 
 <!-- PRODUCTS -->
 <section id="products" class="section">
-  <h2>Our Products</h2>
-  <div class="cards">
-    <div class="card">Drip Irrigation Kits</div>
-    <div class="card">Mini & Mega Sprinklers</div>
-    <div class="card">HDPE / PVC Pipes</div>
-    <div class="card">Filters & Valves</div>
-  </div>
+<h2>Our Products</h2>
+<div class="cards">
+<div class="card" onclick="show('drip')">Drip Irrigation Kits</div>
+<div class="card">Sprinkler Systems</div>
+<div class="card">HDPE / PVC Pipes</div>
+<div class="card">Filters & Valves</div>
+</div>
+</section>
+
+<!-- DRIP SYSTEM -->
+<section id="drip" class="section">
+<h2>Drip Irrigation System</h2>
+
+<p style="margin-top:20px;">
+Drip irrigation supplies water directly to plant roots, saving up to 60% water and increasing crop yield.
+</p>
+
+<h3 style="color:#00ffcc;margin-top:25px;">Benefits</h3>
+<ul>
+<li>✔ Saves water & electricity</li>
+<li>✔ Better crop growth</li>
+<li>✔ Less weed problem</li>
+<li>✔ Suitable for all crops</li>
+</ul>
+
+<h3 style="color:#00ffcc;margin-top:25px;">Crops Supported</h3>
+<p>Banana, Sugarcane, Cotton, Vegetables, Flowers, Fruits, Coconut</p>
+
+<h3 style="color:#00ffcc;margin-top:25px;">Government Subsidy (PMKSY)</h3>
+<p>Subsidy available up to 55% under PMKSY scheme. We help with documents & application.</p>
+
+<h3 style="color:#00ffcc;margin-top:25px;">Approx Cost</h3>
+<p>₹35,000 – ₹70,000 per acre (depends on crop & layout)</p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <h2>Contact Us</h2>
-
-  <p>📍 Address: No.2/29, Bramin Street, Akkur Village, Cheyyar, Tiruvannamalai District, Tamil Nadu - 631701</p>
-  <p>📞 Phone: +91 97869 08640 | +91 94887 37186</p>
-  <p>📧 Email: venkatakkur123@gmail.com</p>
-  <p>🧾 GST No: 33ANHPV7991D1ZJ</p>
+<h2>Contact Us</h2>
+<p>📍 No.2/29, Bramin Street, Akkur Village, Cheyyar, Tiruvannamalai – 631701</p>
+<p>📞 +91 97869 08640 | +91 94887 37186</p>
+<p>📧 venkatakkur123@gmail.com</p>
+<p>🧾 GST: 33ANHPV7991D1ZJ</p>
 </section>
 
 <footer>
-  © 2025 Keerthi Irrigation | All Rights Reserved
+© 2025 Keerthi Irrigation | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919786908640" target="_blank" title="Chat on WhatsApp">💬</a>
+<a class="whatsapp" href="https://wa.me/919786908640?text=Hello%20I%20want%20drip%20irrigation%20details" target="_blank">💬</a>
 
 <script>
-function show(id) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+
+let tamil=false;
+function toggleLang(){
+tamil=!tamil;
+document.querySelector('.lang-btn').innerText = tamil ? "English" : "தமிழ்";
+alert(tamil ? "Tamil version coming soon!" : "English version enabled");
 }
 </script>
 
