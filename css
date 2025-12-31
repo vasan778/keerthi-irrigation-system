@@ -1,1 +1,390 @@
+/* ===============================
+   GLOBAL STYLES
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
+body {
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+              url("https://t3.ftcdn.net/jpg/16/84/73/96/360_F_1684739619_J8MOdMrvkKX02Gnk8FERXYWsis11EMKI.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===============================
+   HEADER & NAV
+=============================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #00ffcc;
+}
+
+.navbar ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #00ffcc;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ===============================
+   HERO SECTIONS
+=============================== */
+.hero, .page-banner, .about-hero {
+  text-align: center;
+  padding: 80px 10%;
+  position: relative;
+}
+
+.hero h2, .page-banner h1, .about-hero h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero p, .page-banner p, .about-hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+
+/* Hero overlay */
+.about-hero::before, .hero::before, .page-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero .hero-content,
+.about-hero .hero-text,
+.page-banner h1,
+.page-banner p {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   SECTIONS
+=============================== */
+.section {
+  display: block;
+  padding: 70px 10%;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  margin: 30px 10%;
+  backdrop-filter: blur(3px);
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+/* PARAGRAPHS */
+p {
+  color: #f5f5f5;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   CARDS & GRIDS
+=============================== */
+.cards, .product-grid, .systems-grid, .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card, .product-card, .system-card, .mv-card, .why-card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover, .product-card:hover, .system-card:hover, .mv-card:hover, .why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+}
+
+.product-card i, .system-card i, .mv-card i, .why-card i {
+  font-size: 45px;
+  color: #00ffcc;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   CTA BUTTONS
+=============================== */
+.btn {
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #198754;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #0f5132;
+  transform: translateY(-5px);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #198754;
+  color: #198754;
+}
+
+.btn.secondary:hover {
+  background: #198754;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ===============================
+   STATS SECTION
+=============================== */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #0f5132, #198754);
+  color: white;
+  text-align: center;
+}
+
+.stats-box h2 {
+  font-size: 3rem;
+  animation: popIn 1s forwards;
+}
+
+.stats-box p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   TIMELINE
+=============================== */
+.timeline {
+  padding: 80px 10%;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  background: rgba(0,0,0,0.4);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-left: 5px solid #198754;
+  border-radius: 5px;
+}
+
+.timeline-item span {
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* ===============================
+   CONTACT FORM
+=============================== */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 80px 10%;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 400px;
+}
+
+.contact-info .info-box {
+  margin-bottom: 25px;
+}
+
+.contact-info .info-box i {
+  font-size: 35px;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact-form button {
+  cursor: pointer;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #f5f5f5;
+}
+
+/* ===============================
+   WHATSAPP FLOATING BUTTON
+=============================== */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 15px #25d366;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #25d366;
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+  }
+
+  .navbar.active ul {
+    display: flex;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .cards, .product-grid, .systems-grid, .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2, .page-banner h1 {
+    font-size: 2rem;
+  }
+}
