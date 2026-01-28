@@ -1,0 +1,69 @@
+app idea 
+1.header 
+	-NAVBAR (logo(Left corner),Global  Search(Center), Right Corner Notificatons,Contact us)
+2.body
+
+3. sections  at the bottom 
+	1. Home
+	2. profile
+	4. News or updates 
+	5. Prodtucts
+	7. About us 
+	
+1. Home 
+	3. status or progress(right to left scrollable)
+	1. SOIL and plant Recomdations(a Subsections )
+	2. weather (recatnange box )
+	4. Contact us (footer with logo whatsapp ,YT, insta ,Website)
+	we have to fill this later 
+2. Profile
+	1. user info (profile image(center),name(below image and center ) edit profilebelow name and center  (sub sections)  all of these should be   below navbar )
+	2. work history (below user info .((sub sections)))
+	3. setting(sub sections)
+	4. payment history(sub sections)
+	5. Custmer Support(sub sections)
+	6. Maintaince (sub sections)
+	7. Log out button
+special instructions user info  bigger than others
+
+3. New or updates 
+	1.search(top (input) button)
+	2.Annoncement(drowpdown dialog box, show the last four annuocment only, morebutton)
+	3.lastest video (Thumbnail , desc)
+4.Products
+	1. product Seacrch
+	Srollable 
+	for each product  requirement 
+		1. image
+		2. Product name 
+		3. Price
+	after the click 
+		1.image 
+		2. product name 
+		3. price 
+		4. Payment
+		5. Related Product. Dependancy Product 
+		6. Desc and Review 
+5. About us 
+	1.Desc (background image with some place holder text)
+	2.adavntages of DI(back ground images and place holde text )
+	3.Search
+`	2.our work locations(list scrollable show 10 at a time)	
+	4. + Icon(Sub sections) 
+
+
+ global Theme 
+	1. use these colars  as green leaf , water droplet colar, white or silver  color
+
+## sub section
+every thing is same as the global for theme 
+
+
+
+# this is for the Mobile APP
+
+ 
+	 
+
+
+
